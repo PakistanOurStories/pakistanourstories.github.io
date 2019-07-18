@@ -39,7 +39,7 @@ a {
   background-color: #1ee470;
   overflow: hidden;
   position: absolute;
-  left: 54%;
+  left: 60%;
   top: 130px;
   z-index: -1;
 }
@@ -85,6 +85,6 @@ a {
   height: auto;
   position: relative;
   float: right;
-  left: -80px;
+  left: -20px;
 }
 /*# sourceMappingURL=article-css.css.map */
