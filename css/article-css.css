@@ -6,85 +6,106 @@
 }
 
 body {
-  width: 550px;
+  max-width: 600px;
+  width: 600px;
   margin: 0 auto;
-  padding: 20px;
 }
 
 a {
-  color: #2ecc71;
+  color: #2FCC72;
+  text-decoration: none;
 }
 
-#logoContainer {
-  text-align: center;
+a:hover {
+  text-decoration: underline;
+}
+
+#articleBody {
+  padding: 0px 15px;
 }
 
 #logo {
+  width: 300px;
+  margin: 0 auto;
+  padding: 30px 0px;
+}
+
+#logo #logoImg {
+  width: 300px;
   height: auto;
-  width: 400px;
-  padding-top: 30px;
 }
 
 #title {
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  width: 300px;
-  margin-top: 50px;
+  font-weight: 600;
+  padding: 0px 0px 10px 0px;
 }
 
-#coverPhotoContainer {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background-color: #1ee470;
-  overflow: hidden;
-  position: absolute;
-  left: 60%;
-  top: 130px;
-  z-index: -1;
-}
-
-#coverPhotoContainer #coverPhoto {
-  width: 300px;
-  height: auto;
-}
-
-#author {
-  font-size: 12px;
-  padding: 20px 0px 0px 0px;
-}
-
-#intro {
-  width: 350px;
+#articleIntro {
   font-size: 15px;
-  padding-top: 20px;
+  padding: 15px 0px;
 }
 
-.full-para {
-  width: 550px;
-  padding: 10px 0px 10px 0px;
+#authors {
+  font-size: 13px;
+  padding: 15px 0px;
+}
+
+.tag {
+  background-color: #2FCC72;
+  padding: 5px;
+  font-size: 12px;
+  color: white;
+  border-radius: 5px;
+}
+
+.para {
+  padding: 15px 0px;
+  text-align: justify;
+}
+
+.grid {
+  list-style: none;
+}
+
+.grid .gridBox {
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .quote {
-  font-size: 16px;
-  background: #ecf0f1;
-  padding: 15px;
-  line-height: 1.5;
-  width: 500px;
-  margin: 20px 5px;
+  background-color: #ecf0f1;
+  padding: 20px;
+  margin: 10px 0px;
 }
 
-#articleText {
-  text-align: justify;
-  font-family: "Lato", sans-serif;
-  margin-top: 50px;
+#cover {
+  background-color: #2FCC72;
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  left: 98px;
 }
 
-#artwork {
+#coverImg {
   width: 200px;
   height: auto;
+}
+
+.artwork {
   position: relative;
-  float: right;
-  left: -20px;
+  left: 98px;
+}
+
+footer {
+  width: inherit;
+  background-color: #2FCC72;
+  margin: 20px 0px 0px 0px;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
 }
 /*# sourceMappingURL=article-css.css.map */
