@@ -65,6 +65,10 @@ a:hover {
   text-align: justify;
 }
 
+.caption {
+  padding: 0px 0px 15px 0px;
+}
+
 .grid {
   list-style: none;
 }
