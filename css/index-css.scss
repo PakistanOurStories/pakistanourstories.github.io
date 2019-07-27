@@ -23,6 +23,11 @@ body {
     width: 100%;
 }
 
+header {
+    width: 650px;
+    margin: 0 auto;
+}
+
 #logo {
     width: 400px;
     margin: 0 auto;
@@ -99,6 +104,8 @@ ul {
 }
 
 footer {
+    width: 650px;
+    margin: 0 auto;
     padding: 20px;
     text-align: center;
     background-color: $primary;
