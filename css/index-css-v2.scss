@@ -171,6 +171,13 @@ section {
         width: 200px;
         text-align: center;
     }
+
+    
+}
+
+#socials {
+        display: none;
+        margin-top: 25px;
 }
 
 footer {
@@ -207,6 +214,8 @@ footer {
     width: 200px;
     height: auto;
 }
+
+
 
 // If the screen size gets less, the nav bar will shrink
 
@@ -265,6 +274,11 @@ footer {
 }
 
 @media screen and (max-width: 645px) {
+
+    #socials {
+        display: block;
+    }
+
     footer {
         #footerLogo {
             padding-top: 20px;
