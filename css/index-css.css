@@ -74,6 +74,8 @@ ul li {
 #articleSection {
   width: 650px;
   margin: 0 auto;
+  padding: 10px;
+  padding-left: 20px;
 }
 
 #articleSection .sectionTitle {
