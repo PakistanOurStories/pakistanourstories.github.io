@@ -59,6 +59,11 @@ nav ul li {
   text-align: center;
 }
 
+nav ul li .fa {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
 nav ul .navLink a:hover {
   color: #5f6969;
 }
@@ -74,11 +79,6 @@ nav ul #linkBlock {
   width: 250px;
   height: auto;
   padding: 0px 20px;
-}
-
-.fa {
-  font-size: 20px;
-  margin-left: 15px;
 }
 
 section {
@@ -178,12 +178,13 @@ section {
 }
 
 #jukeBox {
+  padding: 50px 1px 50px 20px;
   background-color: #ecf0f1;
-  max-width: none;
+  max-width: 100%;
+  min-width: 400px;
 }
 
 #jukeBox #musicBox {
-  padding: 0px;
   -webkit-box-shadow: 10px 10px 43px 0px rgba(0, 0, 0, 0.32);
           box-shadow: 10px 10px 43px 0px rgba(0, 0, 0, 0.32);
 }
@@ -194,41 +195,28 @@ section {
 }
 
 #socials {
-  display: none;
   margin-top: 25px;
+  font-size: 20px;
+}
+
+#socials .fa {
+  padding: 5px;
 }
 
 footer {
   background-color: #2c3e50;
   color: white;
-  padding: 50px 0px;
-  width: 100%;
+  min-width: 400px;
   font-family: "Lato", sans-serif;
   font-weight: lighter;
   font-size: 13px;
+  text-align: center;
 }
 
 footer p {
-  width: 300px;
-  line-height: 1.5;
+  margin: 0 auto;
+  width: 200px;
   padding-top: 10px;
-}
-
-footer ul {
-  width: inherit;
-}
-
-footer ul li {
-  padding: 5px 15px;
-  width: 45%;
-  display: inline-block;
-  vertical-align: top;
-}
-
-footer ul #socialCol {
-  text-align: right;
-  position: absolute;
-  float: right;
 }
 
 #footerLogo {
@@ -255,7 +243,7 @@ footer ul #socialCol {
     padding-top: 50px;
   }
   .column {
-    padding: 10px 0px;
+    padding: 0px 0px;
     display: block;
     min-width: 400px;
   }
@@ -263,15 +251,23 @@ footer ul #socialCol {
     max-width: 400px;
     width: inherit;
   }
+  .large {
+    height: 180px;
+    width: 390px;
+  }
+  .desc {
+    display: none;
+  }
   .coverImg {
     width: inherit;
     height: auto;
+    max-width: 400px;
   }
   .columnVid {
-    width: 400px;
+    width: 390px;
   }
   .wide {
-    width: 400px;
+    width: 390px;
   }
 }
 
@@ -280,41 +276,17 @@ footer ul #socialCol {
     width: 213px;
     display: inline-block;
   }
-  .wide {
-    height: 147px;
-  }
   .jkList {
     width: 400px;
   }
 }
 
 @media screen and (max-width: 645px) {
-  #socials {
-    display: block;
+  #jukeBox {
+    max-width: 400px;
   }
   footer {
-    padding: 0;
-  }
-  footer #footerLogo {
-    padding-top: 20px;
-  }
-  footer p {
-    width: inherit;
-  }
-  footer ul {
-    width: 400px;
-    margin: 0 auto;
-  }
-  footer ul li {
-    width: 400px;
-    display: block;
-    text-align: center;
-  }
-  footer ul #socialCol {
-    display: none;
-    position: relative;
-    width: inherit;
-    text-align: center;
+    padding: 10px;
   }
 }
 /*# sourceMappingURL=index-css-v2.css.map */

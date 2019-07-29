@@ -46,6 +46,10 @@ nav {
             vertical-align: middle;
             margin-right: 10px;
             text-align: center;
+            .fa {
+                font-size: 20px;
+                margin-left: 15px;
+            }
         }
         .navLink a {
             &:hover {
@@ -67,10 +71,6 @@ nav {
     padding: 0px 20px;
 }
 
-.fa {
-    font-size: 20px;
-    margin-left: 15px;
-}
 
 section {
     max-width: 1000px;
@@ -159,11 +159,12 @@ section {
 }
 
 #jukeBox {
+    padding: 50px 1px 50px 20px;
     background-color: #ecf0f1;
-    max-width: none;
+    max-width: 100%;
+    min-width: 400px;
 
     #musicBox {
-        padding: 0px;
         box-shadow: 10px 10px 43px 0px rgba(0,0,0,0.32);
     }
 
@@ -176,37 +177,25 @@ section {
 }
 
 #socials {
-        display: none;
         margin-top: 25px;
+        font-size: 20px;
+        .fa {
+            padding: 5px;
+        }
 }
 
 footer {
     background-color: #2c3e50;
     color: white;
-    padding: 50px 0px;
-    width: 100%;
+    min-width: 400px;
     font-family: "Lato", sans-serif;
     font-weight: lighter;
     font-size: 13px;
+    text-align: center;
     p {
-        width: 300px;
-        line-height: 1.5;
+        margin: 0 auto;
+        width: 200px;
         padding-top: 10px;
-    }
-    ul{
-        width: inherit;
-        
-        li {
-            padding: 5px 15px;
-            width: 45%;
-            display: inline-block;
-            vertical-align: top;
-        }
-        #socialCol {
-            text-align: right;
-            position: absolute;
-            float: right;
-        }
     }
 }
 
@@ -239,7 +228,7 @@ footer {
     }
 
     .column {
-        padding: 10px 0px;
+        padding: 0px 0px;
         display: block;
         min-width: 400px;
     }
@@ -248,15 +237,23 @@ footer {
         width: inherit;
         
     }
+    .large {
+        height: 180px;
+        width: 390px;
+    }
+    .desc {
+        display: none;
+    }
     .coverImg {
             width: inherit;
             height: auto;
+            max-width: 400px;
     }
     .columnVid {
-        width: 400px;
+        width: 390px;
     }
     .wide {
-        width: 400px;
+        width: 390px;
     }
 }
 
@@ -265,9 +262,6 @@ footer {
         width: 213px;
         display: inline-block;
     }
-    .wide {
-        height: 147px;
-    }
     .jkList {
         width: 400px;
     }
@@ -275,32 +269,10 @@ footer {
 
 @media screen and (max-width: 645px) {
 
-    #socials {
-        display: block;
+    #jukeBox {
+        max-width: 400px;
     }
-
     footer {
-        #footerLogo {
-            padding-top: 20px;
-        }
-        padding: 0;
-        p {
-            width: inherit;
-        }
-        ul {
-            width: 400px;
-            margin: 0 auto;
-            li {
-                width: 400px;
-                display: block;
-                text-align: center;
-            }
-            #socialCol {
-                display: none;
-                position: relative;
-                width: inherit;
-                text-align: center;
-            }
-        }
+        padding: 10px;
     }
 }
