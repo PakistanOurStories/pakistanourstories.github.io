@@ -235,6 +235,7 @@ footer #intro ul li {
     display: none;
   }
   #articleTitle {
+    margin-top: 100px;
     width: 100%;
     max-width: 1000px;
     font-size: 45px;
@@ -251,6 +252,10 @@ footer #intro ul li {
   }
   #articleText #sideCards {
     display: none;
+  }
+  nav {
+    padding: 25px;
+    position: fixed;
   }
 }
 

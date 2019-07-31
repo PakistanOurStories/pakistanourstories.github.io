@@ -204,6 +204,7 @@ footer {
     }
 
     #articleTitle {
+        margin-top: 100px;
         width: 100%;
         max-width: 1000px;
         font-size: 45px;
@@ -221,6 +222,11 @@ footer {
         #sideCards {
             display: none;
         }
+    }
+
+    nav {
+        padding: 25px;
+        position: fixed;
     }
 }
 
@@ -240,4 +246,5 @@ footer {
             max-width: none;
         }
     }
+
 }
