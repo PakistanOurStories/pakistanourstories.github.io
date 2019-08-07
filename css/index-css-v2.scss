@@ -3,7 +3,7 @@ $primary: #2ecc71;
 * {
     margin: 0;
     padding: 0;
-    font-family: "Lato", sans-serif;
+    font-family: "Crimson Text", serif;
 }
 
 a {
@@ -35,41 +35,15 @@ nav {
     padding: 15px 0px;
     background-color: #ecf0f1;
     font-size: 11px;
+    text-align: center;
 
-    ul {
-        list-style: none;
-        max-width: 1000px;
-        margin: 0 auto;
-        li {
-            width: fit-content;
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 10px;
-            text-align: center;
-            .fa {
-                font-size: 20px;
-                margin-left: 15px;
-            }
-        }
-        .navLink a {
-            &:hover {
-                color: #5f6969;
-            }
-        }
-        #linkBlock {
-            position: relative;
-            float: right;
-            top: 5px;
-            right: 15px;
-        }
+    #logo {
+        width: 250px;
+        height: auto;
+        padding: 0px 20px;
     }
 }
 
-#logo {
-    width: 250px;
-    height: auto;
-    padding: 0px 20px;
-}
 
 
 section {
@@ -93,14 +67,16 @@ section {
     text-align: center;
     margin-top: 25px;
     .column {
-        width: fit-content;
+        max-width: 500px;
         display: inline-block;
         vertical-align: top;
+        margin-right: 7px;
     }
 }
 
 .card {
-    max-width: 250px;
+    //max-width: 250px;
+    width: 100%;
     overflow: hidden;
     padding: 7px 5px 5px 5px;
     
@@ -110,10 +86,9 @@ section {
         background-position: top center;
     }
     .title {
-        font-family: "Montserrat", sans-serif;
         font-weight: 400;
         text-align: left;
-        font-size: 18px;
+        font-size: 20px;
         color: white;
         padding: 15px;
     }
@@ -123,8 +98,7 @@ section {
         padding-left: 15px;
         color: white;
         font-weight: lighter;
-        font-family: "Lato", sans-serif;
-        font-style: italic;
+        //font-style: italic;
     }
     .desc {
         padding-top: 20px;
@@ -150,26 +124,15 @@ section {
     max-width: 400px;
 }
 
-
-.columnVid {
-    width: 300px;
-    height: 160px;
-    display: block;
-    padding: 7px 5px;
-}
-
 #jukeBox {
-    padding: 50px 1px 50px 20px;
-    background-color: #ecf0f1;
+    //background-color: #ecf0f1;
     max-width: 100%;
-    min-width: 400px;
 
     #musicBox {
         box-shadow: 10px 10px 43px 0px rgba(0,0,0,0.32);
     }
 
     .jkList {
-        width: 200px;
         text-align: center;
     }
 
@@ -186,93 +149,56 @@ section {
 
 footer {
     background-color: #2c3e50;
-    color: white;
-    min-width: 400px;
-    font-family: "Lato", sans-serif;
+    color: #ecf0f1;
     font-weight: lighter;
     font-size: 13px;
-    text-align: center;
-    p {
-        margin: 0 auto;
+    line-height: 1.5;
+
+    img {
         width: 200px;
-        padding-top: 10px;
+    }
+
+    #intro {
+        padding: 20px;
+        width: 50%;
+        min-width: 200px;
+        margin: 0 auto;
+        text-align: center;
+        ul {
+            list-style: none;
+            font-size: 20px;
+            li {
+                width: fit-content;
+                display: inline-block;
+                margin: 5px;
+            }
+        }
     }
 }
-
-#footerLogo {
-    width: 200px;
-    height: auto;
-}
-
-
 
 // If the screen size gets less, the nav bar will shrink
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 985px) {
+    .card {
+        padding: 5px 0px;
+    }
+
+    .large, .wide {
+        max-width: none;
+    }
+
     nav {
-        padding: 15px 0px 0px 0px;
         position: fixed;
     }
-    ul {
-        width: 390px;
-        margin: 0 auto;
-    }
-    .navLink a, .navLink nav-social {
-        display: none;
-    }
-    #logo {
-        padding: 10px 80px;
+
+    .column {
+        width: 100%;
+        margin: 0;
     }
     .sectionTitle {
         padding-top: 50px;
     }
-
-    .column {
-        padding: 0px 0px;
-        display: block;
-        min-width: 390px;
-    }
-    .card {
-        max-width: 400px;
-        width: inherit;
-        
-    }
-    .large {
-        height: 180px;
-        width: 380px;
-    }
     .desc {
         display: none;
-    }
-    .coverImg {
-            width: inherit;
-            height: auto;
-            max-width: 400px;
-    }
-    .columnVid {
-        width: 380px;
-    }
-    .wide {
-        width: 380px;
-    }
-}
-
-@media screen and (min-width:790px) and (max-width: 1045px) {
-    .columnVid {
-        width: 213px;
-        display: inline-block;
-    }
-    .jkList {
-        width: 400px;
-    }
-}
-
-@media screen and (max-width: 645px) {
-
-    #jukeBox {
-        max-width: 400px;
-    }
-    footer {
-        padding: 10px;
     }
 }
