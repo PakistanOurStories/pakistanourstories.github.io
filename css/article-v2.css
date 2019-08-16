@@ -40,6 +40,7 @@ nav #logo {
   padding-bottom: 50px;
   font-size: 12px;
   color: #5f6969;
+  list-style: none;
 }
 
 #flairs .flair {
@@ -181,6 +182,37 @@ nav #logo {
   width: fit-content;
   display: inline-block;
   vertical-align: top;
+}
+
+#jukeBox {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ecf0f1;
+}
+
+#jukeBox #jkList {
+  max-width: inherit;
+  list-style: none;
+}
+
+#jukeBox #jkList .jkItem {
+  width: 150px;
+  padding: 15px;
+  margin: 0 auto;
+  font-size: 12px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#jukeBox #jkList .jkItem h3, #jukeBox #jkList .jkItem p {
+  font-weight: lighter;
+  color: #2c3e50;
+}
+
+#player {
+  -webkit-box-shadow: 0px 0px 68px -34px rgba(0, 0, 0, 0.98);
+          box-shadow: 0px 0px 68px -34px rgba(0, 0, 0, 0.98);
 }
 
 footer {
